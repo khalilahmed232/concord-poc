@@ -5,7 +5,7 @@ import requests
 print ("Always executed")
  
 # Making a GET request
-r = requests.get('https://api.github.com/users/naveenkrnl')
+r = requests.get('https://api.github.com/users/khalil1210')
 
 # check status code for response received
 # success code - 200
