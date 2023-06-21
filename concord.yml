@@ -1,8 +1,3 @@
 flows:
   default:
-    - task: docker
-      in:
-        image: python
-        saveOut: true
-      out: dockerResult
-
+  - log: "Hello Concord User"
