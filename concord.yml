@@ -10,6 +10,8 @@ flows:
       saveOut: true
       cmd: |
         echo "Executing python"
+        chmod 777 hello.py
+        ./hello.py
     out:
       dockerResult
-  - log: ${dockerResult}
+  - log: ${dockerResult.stdout}
