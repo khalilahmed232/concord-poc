@@ -10,7 +10,9 @@ flows:
       saveOut: true
       cmd: |
         echo "Executing python"
-        sudo pip3 install -r requirements.txt
+        apt-get update -y
+        apt-get install -y python-pip python-dev
+        pip3 install -r requirements.txt
         chmod 777 hello.py
         python3 hello.py
     out:
