@@ -10,9 +10,9 @@ flows:
       saveOut: true
       cmd: |
         echo "Executing python"
+        sudo pip3 install -r requirements.txt
         chmod 777 hello.py
         python3 hello.py
-        pip3 install -r requirements.txt
     out:
       dockerResult
   - log: ${dockerResult.stdout}
