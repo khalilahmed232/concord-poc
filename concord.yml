@@ -4,3 +4,12 @@ configuration:
 flows:
   default:
   - log: "Hello Concord User"
+  - task : docker
+    in: 
+      image: python
+      saveOut: true
+      cmd: |
+        echo "Executing python"
+    out:
+      dockerResult
+  - log: ${dockerResult}
