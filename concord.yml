@@ -11,7 +11,7 @@ flows:
       cmd: |
         echo "Executing python"
         chmod 777 hello.py
-        ./hello.py
+        python3 hello.py
     out:
       dockerResult
   - log: ${dockerResult.stdout}
