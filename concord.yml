@@ -4,9 +4,5 @@ flows:
       in:
         image: python
         saveOut: true
-        cmd: echo '${greeting}'
       out: dockerResult
 
-configuration:
-  arguments:
-    greeting: "Hello, world!"
